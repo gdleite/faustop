@@ -1,4 +1,9 @@
-body{ 
-	margin: 0;
-	
-}
+.jumbotron {
+	background-image:url(banner-faustao.jpg);
+	background-position:-10px top; 
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    padding: 50px 30px 30px 50px;
+    height: 400px; 
+
+}	
