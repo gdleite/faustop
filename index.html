@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 	<title>Ô loco, Bixo!</title>
-	<link rel="stylesheet" type="text/css" href="faustao.css">
+	<script type="text/javascript" src="faustao.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="faustao">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<header class="jumbotron">
+  		<h1>Quem é você no Faustão?</h1>      
+	</header>      
 	<form>
-		<h1>Que personagem do faustão é você?</h1>
+	<div class="col-sm-6">
 		<h3>Qual sua atividade preferida nos finais de semana?</h3>
-		<input type="radio" name="1" value="futebol">Assistir futebol</input><br>
-		<input type="radio" name="1" value="exercicio">Fazer exercícios</input><br>
-		<input type="radio" name="1" value="amigos">Sair com os amigos</input><br>
-		<input type="radio" name="1" value="dormir">Dormir</input><br>
-		<input type="radio" name="1" value="pet">Passear com seus cachorros</input><br>
-
+		<input type="radio" name="1" value="futebol" onclick="reposta(1,'futebol')">Assistir futebol</input><br>
+		<input type="radio" name="1" value="exercicio" onclick="reposta(1,'exercicio')">Fazer exercícios</input><br>
+		<input type="radio" name="1" value="amigos" onclick="reposta(1,'amigos')">Sair com os amigos</input><br>
+		<input type="radio" name="1" value="dormir" onclick="reposta(1,'dormir')">Dormir</input><br>
+		<input type="radio" name="1" value="pet" onclick="reposta(1,'pet')">Passear com seu(s) cachorro(s)</input><br>
+	</div>
+	<div class="col-sm-6">
 		<h3>Qual seu quadro do Faustão preferido</h3>
 		<input type="radio" name="2" value="sevira">Se vira nos 30</input><br>
 		<input type="radio" name="2" value="danca">Dança dos famosos</input><br>
 		<input type="radio" name="2" value="olimpiadas">Olimpíadas do Faustão</input><br>
 		<input type="radio" name="2" value="videocassetadas">Videocassetadas</input><br>
 		<input type="radio" name="2" value="todos">Todos os anteriores</input><br>
-		
+	</div>
+	<div class="col-sm-6">	
 		<h3>Escolha a celebridade que mais se parece com você:</h3>
 		<input type="radio" name="3" value="andremarques">DJ. Andre Marques</input><br>
 		<input type="radio" name="3" value="gugu">Gugu</input><br>
 		<input type="radio" name="3" value="casagrande">Casagrande</input><br>
 		<input type="radio" name="3" value="yudi">Yudi Tamashiro</input><br>
 		<input type="radio" name="3" value="bruce">Bruce Willis</input><br>
-
+	</div>
+	<div class="col-sm-6">
 		<h3>Qual o pior quadro do Faustão na sua opinião?</h3>
 		<input type="radio" name="4" value="dingdong">Ding Dong</input><br>
 		<input type="radio" name="4" value="arquivo">Arquivo Confidencial</input><br>
 		<input type="radio" name="4" value="videocassetadas">Videcassetadas</input><br>
 		<input type="radio" name="4" value="danca">Dança dos Famosos</input><br>
 		<input type="radio" name="4" value="nenhum"></input>Nenhum dos anteriores<br>
-
+	</div>
+	<div class="col-sm-6">
 		<h3>Qual sua frase do Faustão Favorita?</h3>
 		<input type="radio" name="5" value="fogo">"Tá pegando fogo bixo!"</input><br>
 		<input type="radio" name="5" value="fera">"Olha só essa fera"</input><br>
 		<input type="radio" name="5" value="bixo">"Ô lôco, meu!"</input><br>
 		<input type="radio" name="5" value="erou">"Erooou!"</input><br>
 		<input type="radio" name="5" value="morer">"Cê vai morer"</input><br>
-
+	</div>
+	<div class="col-sm-6">
 		<h3>Você esta dirigindo quando sente uma batida na traseira,<br/> 
 		ao descer do carro para se confrontar com o outro motorista, vê que é o Faustão.<br/>
 		Como você reagiria?</h3>
@@ -50,28 +62,33 @@
 		<input type="radio" name="6" value="textao">Tiraria uma foto e faria um textão no Facebook.</input><br>
 		<input type="radio" name="6" value="magro">Além de pedir o dinheiro do conserto, falaria que ele ficou menos engraçado depois de magro.</input><br>
 		<input type="radio" name="6" value="sevira">Faria uma apresentação do se vira nos 30 ali mesmo.</input><br>
-		<input type="radio" name="6" value=""></input><br>
-
+		<input type="radio" name="6" value="agradecer">Agradeceria à seus ancestrais por lhe proporcionar esse encontro</input>
+		<br>
+	</div>
+	<div class="col-sm-6">
 		<h3>Você foi convidado a fazer um almoço para o Faustão e seus amigos, <br>Qual seria o prato principal?</h3>
 		<input type="radio" name="7" value="churras">Churrasco</input><br>
 		<input type="radio" name="7" value="salada">Salada</input><br>
 		<input type="radio" name="7" value="torta">Torta</input><br>
 		<input type="radio" name="7" value="sucrilhos">Sucrilhos</input><br>
 		<input type="radio" name="7" value="pepsi">Pepsi</input><br>
-
+	</div>
+	<div class="col-sm-6">
 		<h3>Com que frequência você assiste ao Domingão do Faustão?</h3>
 		<input type="radio" name="8" value="0">Não assisto.</input><br>
 		<input type="radio" name="8" value="1">Só vejo o se vira nos 30.</input><br>
 		<input type="radio" name="8" value="2">Ligo a TV por acaso no meio do programa, e vejo até o fim.</input><br>
 		<input type="radio" name="8" value="3">Vejo o programa inteiro, toda semana.</input><br>
 		<input type="radio" name="8" value="4">Além de ver o programa da semana, revejo os programas anteriores.</input><br>
-		
+	</div>
+	<div class="col-sm-6">
 		<h3></h3>
 		<input type="radio" name="9" value=""></input><br>
 		<input type="radio" name="9" value=""></input><br>
 		<input type="radio" name="9" value=""></input><br>
 		<input type="radio" name="9" value=""></input><br>
 		<input type="radio" name="9" value=""></input><br>
+	</div>
 	</form>
 
 </body>
