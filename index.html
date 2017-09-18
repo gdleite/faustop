@@ -3,93 +3,118 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 	<title>Ô loco, Bixo!</title>
-	<script type="text/javascript" src="faustao.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="faustao.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="faustao.js"></script>
+  	
 </head>
-<body>
 	<header class="jumbotron">
   		<h1>Quem é você no Faustão?</h1>      
 	</header>      
 	<form>
 	<div class="col-sm-6">
 		<h3>Qual sua atividade preferida nos finais de semana?</h3>
-		<input type="radio" name="1" value="futebol" onclick="reposta(1,'futebol')">Assistir futebol</input><br>
-		<input type="radio" name="1" value="exercicio" onclick="reposta(1,'exercicio')">Fazer exercícios</input><br>
-		<input type="radio" name="1" value="amigos" onclick="reposta(1,'amigos')">Sair com os amigos</input><br>
-		<input type="radio" name="1" value="dormir" onclick="reposta(1,'dormir')">Dormir</input><br>
-		<input type="radio" name="1" value="pet" onclick="reposta(1,'pet')">Passear com seu(s) cachorro(s)</input><br>
+		<input type="radio" name="1" onclick="test(1,'futebol')">Assistir futebol<br>
+		<input type="radio" name="1" onclick="test(1,'exercicio')">Fazer exercícios<br>
+		<input type="radio" name="1" onclick="test(1,'amigos')">Sair com os amigos<br>
+		<input type="radio" name="1" onclick="test(1,'dormir')">Dormir<br>
+		<input type="radio" name="1" onclick="test(1,'pet')">Passear com seu(s) cachorro(s)<br>
 	</div>
 	<div class="col-sm-6">
 		<h3>Qual seu quadro do Faustão preferido</h3>
-		<input type="radio" name="2" value="sevira">Se vira nos 30</input><br>
-		<input type="radio" name="2" value="danca">Dança dos famosos</input><br>
-		<input type="radio" name="2" value="olimpiadas">Olimpíadas do Faustão</input><br>
-		<input type="radio" name="2" value="videocassetadas">Videocassetadas</input><br>
-		<input type="radio" name="2" value="todos">Todos os anteriores</input><br>
+		<input type="radio" name="2" onclick="test(2,'sevira')">Se vira nos 30<br>
+		<input type="radio" name="2" onclick="test(2,'danca')">Dança dos famosos<br>
+		<input type="radio" name="2" onclick="test(2,'olimpiadas')">Olimpíadas do Faustão<br>
+		<input type="radio" name="2" onclick="test(2,'videocassetadas')">Videocassetadas<br>
+		<input type="radio" name="2" onclick="test(2,'todos')">Todos os anteriores<br>
 	</div>
 	<div class="col-sm-6">	
 		<h3>Escolha a celebridade que mais se parece com você:</h3>
-		<input type="radio" name="3" value="andremarques">DJ. Andre Marques</input><br>
-		<input type="radio" name="3" value="gugu">Gugu</input><br>
-		<input type="radio" name="3" value="casagrande">Casagrande</input><br>
-		<input type="radio" name="3" value="yudi">Yudi Tamashiro</input><br>
-		<input type="radio" name="3" value="bruce">Bruce Willis</input><br>
+		<input type="radio" name="3" onclick="test(3,'andremarques')">DJ. Andre Marques<br>
+		<input type="radio" name="3" onclick="test(3,'gugu')">Gugu<br>
+		<input type="radio" name="3" onclick="test(3,'casagrande')">Casagrande<br>
+		<input type="radio" name="3" onclick="test(3,'yudi')">Yudi Tamashiro<br>
+		<input type="radio" name="3" onclick="test(3,'bruce')">Bruce Willis<br>
 	</div>
 	<div class="col-sm-6">
 		<h3>Qual o pior quadro do Faustão na sua opinião?</h3>
-		<input type="radio" name="4" value="dingdong">Ding Dong</input><br>
-		<input type="radio" name="4" value="arquivo">Arquivo Confidencial</input><br>
-		<input type="radio" name="4" value="videocassetadas">Videcassetadas</input><br>
-		<input type="radio" name="4" value="danca">Dança dos Famosos</input><br>
-		<input type="radio" name="4" value="nenhum"></input>Nenhum dos anteriores<br>
+		<input type="radio" name="4" onclick="test(4,'dingdong')">Ding Dong<br>
+		<input type="radio" name="4" onclick="test(4,'arquivo')">Arquivo Confidencial<br>
+		<input type="radio" name="4" onclick="test(4,'videocassetadas')">Videcassetadas<br>
+		<input type="radio" name="4" onclick="test(4,'danca')">Dança dos Famosos<br>
+		<input type="radio" name="4" onclick="test(4,'nenhum')">Nenhum dos anteriores<br>
 	</div>
 	<div class="col-sm-6">
 		<h3>Qual sua frase do Faustão Favorita?</h3>
-		<input type="radio" name="5" value="fogo">"Tá pegando fogo bixo!"</input><br>
-		<input type="radio" name="5" value="fera">"Olha só essa fera"</input><br>
-		<input type="radio" name="5" value="bixo">"Ô lôco, meu!"</input><br>
-		<input type="radio" name="5" value="erou">"Erooou!"</input><br>
-		<input type="radio" name="5" value="morer">"Cê vai morer"</input><br>
+		<input type="radio" name="5" onclick="test(5,'fogo')">"Tá pegando fogo bixo!"<br>
+		<input type="radio" name="5" onclick="test(5,'fera')">"Olha só essa fera"<br>
+		<input type="radio" name="5" onclick="test(5,'bixo')">"Ô lôco, meu!"<br>
+		<input type="radio" name="5" onclick="test(5,'errou')">"Erooou!"<br>
+		<input type="radio" name="5" onclick="test(5,'morer')">"Cê vai morer"<br>
 	</div>
 	<div class="col-sm-6">
 		<h3>Você esta dirigindo quando sente uma batida na traseira,<br/> 
 		ao descer do carro para se confrontar com o outro motorista, vê que é o Faustão.<br/>
 		Como você reagiria?</h3>
-		<input type="radio" name="6" value="autografo">Pediria um autógrafo, e deixaria por isso mesmo.</input><br>
-		<input type="radio" name="6" value="textao">Tiraria uma foto e faria um textão no Facebook.</input><br>
-		<input type="radio" name="6" value="magro">Além de pedir o dinheiro do conserto, falaria que ele ficou menos engraçado depois de magro.</input><br>
-		<input type="radio" name="6" value="sevira">Faria uma apresentação do se vira nos 30 ali mesmo.</input><br>
-		<input type="radio" name="6" value="agradecer">Agradeceria à seus ancestrais por lhe proporcionar esse encontro</input>
+		<input type="radio" name="6" onclick="test(6,'autografo')">Pediria um autógrafo, e deixaria por isso mesmo.<br>
+		<input type="radio" name="6" onclick="test(6,'textao')">Tiraria uma foto e faria um textão no Facebook.<br>
+		<input type="radio" name="6" onclick="test(6,'magro')">Além de pedir o dinheiro do conserto, falaria que ele ficou menos engraçado depois de magro.<br>
+		<input type="radio" name="6" onclick="test(6,'sevira')">Faria uma apresentação do se vira nos 30 ali mesmo.<br>
+		<input type="radio" name="6" onclick="test(6,'agradecer')">Agradeceria à seus ancestrais por lhe proporcionar esse encontro
 		<br>
 	</div>
 	<div class="col-sm-6">
 		<h3>Você foi convidado a fazer um almoço para o Faustão e seus amigos, <br>Qual seria o prato principal?</h3>
-		<input type="radio" name="7" value="churras">Churrasco</input><br>
-		<input type="radio" name="7" value="salada">Salada</input><br>
-		<input type="radio" name="7" value="torta">Torta</input><br>
-		<input type="radio" name="7" value="sucrilhos">Sucrilhos</input><br>
-		<input type="radio" name="7" value="pepsi">Pepsi</input><br>
+		<input type="radio" name="7" onclick="test(7,'churras')">Churrasco<br>
+		<input type="radio" name="7" onclick="test(7,'salada')">Salada<br>
+		<input type="radio" name="7" onclick="test(7,'torta')">Torta<br>
+		<input type="radio" name="7" onclick="test(7,'sucrilhos')">Sucrilhos<br>
+		<input type="radio" name="7" onclick="test(7,'pepsi')">Pepsi<br>
 	</div>
 	<div class="col-sm-6">
 		<h3>Com que frequência você assiste ao Domingão do Faustão?</h3>
-		<input type="radio" name="8" value="0">Não assisto.</input><br>
-		<input type="radio" name="8" value="1">Só vejo o se vira nos 30.</input><br>
-		<input type="radio" name="8" value="2">Ligo a TV por acaso no meio do programa, e vejo até o fim.</input><br>
-		<input type="radio" name="8" value="3">Vejo o programa inteiro, toda semana.</input><br>
-		<input type="radio" name="8" value="4">Além de ver o programa da semana, revejo os programas anteriores.</input><br>
+		<input type="radio" name="8" onclick="test(8,'0')">Não assisto.<br>
+		<input type="radio" name="8" onclick="test(8,'1')">Só vejo o se vira nos 30.<br>
+		<input type="radio" name="8" onclick="test(8,'2')">Ligo a TV por acaso no meio do programa, e vejo até o fim.<br>
+		<input type="radio" name="8" onclick="test(8,'3')">Vejo o programa inteiro, toda semana.<br>
+		<input type="radio" name="8" onclick="test(8,'4')">Além de ver o programa da semana, revejo os programas anteriores.<br>
 	</div>
 	<div class="col-sm-6">
 		<h3></h3>
-		<input type="radio" name="9" value=""></input><br>
-		<input type="radio" name="9" value=""></input><br>
-		<input type="radio" name="9" value=""></input><br>
-		<input type="radio" name="9" value=""></input><br>
-		<input type="radio" name="9" value=""></input><br>
+		<input type="radio" name="9" onclick="test(9,'')"><br>
+		<input type="radio" name="9" onclick="test(9,'')"><br>
+		<input type="radio" name="9" onclick="test(9,'')"><br>
+		<input type="radio" name="9" onclick="test(9,'')"><br>
+		<input type="radio" name="9" onclick="test(9,'')"><br>
+	</div>
+	<div class="col-sm-6">
+		<h3></h3>
+		<input type="radio" name="10" onclick="test(10,'')"><br>
+		<input type="radio" name="10" onclick="test(10,'')"><br>
+		<input type="radio" name="10" onclick="test(10,'')"><br>
+		<input type="radio" name="10" onclick="test(10,'')"><br>
+		<input type="radio" name="10" onclick="test(10,'')"><br>
+	</div>
+	<div class="col-sm-6">
+		<h3></h3>
+		<input type="radio" name="11" onclick="test(11,'')"><br>
+		<input type="radio" name="11" onclick="test(11,'')"><br>
+		<input type="radio" name="11" onclick="test(11,'')"><br>
+		<input type="radio" name="11" onclick="test(11,'')"><br>
+		<input type="radio" name="11" onclick="test(11,'')"><br>
+	</div>
+	<div class="col-sm-6">
+		<h3></h3>
+		<input type="radio" name="12" onclick="test(12,'')"><br>
+		<input type="radio" name="12" onclick="test(12,'')"><br>
+		<input type="radio" name="12" onclick="test(12,'')"><br>
+		<input type="radio" name="12" onclick="test(12,'')"><br>
+		<input type="radio" name="12" onclick="test(12,'')"><br>
 	</div>
 	</form>
+	
 
 </body>
 </html>
