@@ -77,24 +77,23 @@ function avaliacao(valores){
 
 	var pts={"gatodoido":0,"faro":0,"carol":0,"dancarina":0,"faustop":0}
 
-	for (var item in valores){
-		console.log(item);
-		switch (valores[item]){
-			case (valores[item] in faustop):
+	for (i=0;i<valores.length;i++){
+		console.log(valores[i]);
+			if (valores[i] in faustop){ 
 				pts["faustop"]++;
-				break;
-			case (valores[item] in dancarina):
+			}
+			elif (valores[i] in dancarina){
 				pts["dancarina"]++;
-				break;
-			case (valores[item] in carol):
+			}
+			elif (valores[i] in carol){
 				pts["carol"]++;
-				break;
-			case (valores[item] in rodrigoFaro):
+			}
+			elif (valores[i] in rodrigoFaro){
 				pts["faro"]++;
-				break;
-			case (valores[item] in gatoDoido):
+			}
+			else {
 				pts["gatodoido"]++;
-				break;
+			}
 		}
 	}
 	console.log(pts)
