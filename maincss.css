@@ -1,0 +1,25 @@
+body{
+	font-family: 'Lobster', cursive;
+	background-color: #262626;
+}
+section{
+	background:#666;
+  	position:absolute;
+  	color:#fff;
+  	top:50%;
+  	left:50%;
+  	padding:15px;
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	-webkit-transform: translate(-50%,-50%);
+  	transform: translate(-50%,-50%);
+  	border-radius: 25px;
+}
+h1{
+	font-size:60px;
+}
+.button1{
+	float: left;
+}
+.button2{
+	float: right;
+}
