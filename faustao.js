@@ -79,22 +79,23 @@ function avaliacao(valores){
 
 	for (i=0;i<valores.length;i++){
 		console.log(valores[i]);
-			if (valores[i] in faustop){ 
-				pts["faustop"]++;
-			}
-			else if (valores[i] in dancarina){
-				pts["dancarina"]++;
-			}
-			else if (valores[i] in carol){
-				pts["carol"]++;
-			}
-			else if (valores[i] in rodrigoFaro){
-				pts["faro"]++;
-			}
-			else {
-				pts["gatodoido"]++;
-			}
+		if (valores[i] in faustop){ 
+			pts["faustop"]++;
+		}
+		else if (valores[i] in dancarina){
+			pts["dancarina"]++;
+		}
+		else if (valores[i] in carol){
+			pts["carol"]++;
+		}
+		else if (valores[i] in rodrigoFaro){
+			pts["faro"]++;
+		}
+		else {
+			pts["gatodoido"]++;
 		}
 	}
 	console.log(pts)
 }
+	
+
