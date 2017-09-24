@@ -82,13 +82,13 @@ function avaliacao(valores){
 			if (valores[i] in faustop){ 
 				pts["faustop"]++;
 			}
-			elif (valores[i] in dancarina){
+			else if (valores[i] in dancarina){
 				pts["dancarina"]++;
 			}
-			elif (valores[i] in carol){
+			else if (valores[i] in carol){
 				pts["carol"]++;
 			}
-			elif (valores[i] in rodrigoFaro){
+			else if (valores[i] in rodrigoFaro){
 				pts["faro"]++;
 			}
 			else {
