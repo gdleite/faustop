@@ -79,16 +79,16 @@ function avaliacao(valores){
 
 	for (i=0;i<valores.length;i++){
 		console.log(valores[i]);
-		if (faustop.indexOf(item) > -1){ 
+		if (faustop.indexOf(valores[i]) > -1){ 
 			pts["faustop"]++;
 		}
-		else if (dancarina.indexOf(item) ){
+		else if (dancarina.indexOf(valores[i]) > -1 ){
 			pts["dancarina"]++;
 		}
-		else if (carol.indexOf(item) ){
+		else if (carol.indexOf(valores[i]) > -1 ){
 			pts["carol"]++;
 		}
-		else if (rodrigoFaro.indexOf(item) ){
+		else if (rodrigoFaro.indexOf(valores[i]) > -1 ){
 			pts["faro"]++;
 		}
 		else {
