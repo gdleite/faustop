@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<title>Ô loco, Bixo!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="faustao.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="faustao.js"></script>
+  	
+</head>
+	<header class="jumbotron">
+  		<h1>Quem é você no Faustão?</h1>      
+	</header>  
+	<section>    
+	<form>
+	<div class="col-sm-6">
+		<h3>Qual sua atividade preferida nos finais de semana?</h3>
+		<input type="radio" name="1" onclick="test(1,'estudar')">Estudar para alcançar seus objetivos<br>
+		<input type="radio" name="1" onclick="test(1,'exercicio')">Fazer exercícios<br>
+		<input type="radio" name="1" onclick="test(1,'amigos')">Sair com os amigos<br>
+		<input type="radio" name="1" onclick="test(1,'mal')">Falar mal dos outros<br>
+		<input type="radio" name="1" onclick="test(1,'pet')">Passear com seu(s) gato(s)<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Qual seu quadro do Faustão preferido?</h3>
+		<input type="radio" name="2" onclick="test(2,'sevira')">Se vira nos 30<br>
+		<input type="radio" name="2" onclick="test(2,'danca')">Dança dos famosos<br>
+		<input type="radio" name="2" onclick="test(2,'propaganda')">Quando eles fazem propaganda durante o progama<br>
+		<input type="radio" name="2" onclick="test(2,'videocassetadas')">Videocassetadas<br>
+		<input type="radio" name="2" onclick="test(2,'todos')">Todos os anteriores<br>
+	</div>
+	<div class="col-sm-6">	
+		<h3>Escolha a celebridade que mais se parece com você:</h3>
+		<input type="radio" name="3" onclick="test(3,'andremarques')">DJ. Andre Marques<br>
+		<input type="radio" name="3" onclick="test(3,'gugu')">Gugu<br>
+		<input type="radio" name="3" onclick="test(3,'selena')">Selena Gomez<br>
+		<input type="radio" name="3" onclick="test(3,'bambam')">Kleber Bambam<br>
+		<input type="radio" name="3" onclick="test(3,'yudi')">Yudi Tamashiro<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Qual o pior quadro do Faustão na sua opinião?</h3>
+		<input type="radio" name="4" onclick="test(4,'dingdong')">Ding Dong<br>
+		<input type="radio" name="4" onclick="test(4,'arquivo')">Arquivo Confidencial<br>
+		<input type="radio" name="4" onclick="test(4,'videocassetadas2')">Videocassetadas<br>
+		<input type="radio" name="4" onclick="test(4,'danca2')">Dança dos Famosos<br>
+		<input type="radio" name="4" onclick="test(4,'nenhum')">Nada é ruim no proograma<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Qual sua frase do Faustão Favorita?</h3>
+		<input type="radio" name="5" onclick="test(5,'fogo')">"Tá pegando fogo bixo!"<br>
+		<input type="radio" name="5" onclick="test(5,'fera')">"Olha só essa fera"<br>
+		<input type="radio" name="5" onclick="test(5,'meu')">"Ô lôco, meu!"<br>
+		<input type="radio" name="5" onclick="test(5,'errou')">"Erooou!"<br>
+		<input type="radio" name="5" onclick="test(5,'morer')">"Cê vai morer"<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Você esta dirigindo quando sente uma batida na traseira,<br/> 
+		ao descer do carro para se confrontar com o outro motorista, vê que é o Faustão.<br/>
+		Como você reagiria?</h3>
+		<input type="radio" name="6" onclick="test(6,'autografo')">Pediria um autógrafo, e deixaria por isso mesmo.<br>
+		<input type="radio" name="6" onclick="test(6,'textao')">Tiraria uma foto e faria um textão no Facebook.<br>
+		<input type="radio" name="6" onclick="test(6,'magro')">Além de pedir o dinheiro do conserto, falaria que ele ficou menos engraçado depois de magro.<br>
+		<input type="radio" name="6" onclick="test(6,'sevira2')">Faria uma apresentação do se vira nos 30 ali mesmo.<br>
+		<input type="radio" name="6" onclick="test(6,'agradecer')">Agradeceria à seus ancestrais por lhe proporcionar esse encontro
+		<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Você foi convidado a fazer um almoço para o Faustão e seus amigos, <br>Qual seria o prato principal?</h3>
+		<input type="radio" name="7" onclick="test(7,'salada')">Saladinha<br>
+		<input type="radio" name="7" onclick="test(7,'margarina')">Algo com a Nova Margarina Doriana&trade;<br>
+		<input type="radio" name="7" onclick="test(7,'sushi')">Sushi<br>
+		<input type="radio" name="7" onclick="test(7,'sucrilhos')">Sucrilhos<br>
+		<input type="radio" name="7" onclick="test(7,'pepsi')">Pepsi<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Com que frequência você assiste ao Domingão do Faustão?</h3>
+		<input type="radio" name="8" onclick="test(8,'0')">Não assisto.<br>
+		<input type="radio" name="8" onclick="test(8,'1')">Só vejo o se vira nos 30.<br>
+		<input type="radio" name="8" onclick="test(8,'2')">Ligo a TV por acaso no meio do programa, e vejo até o fim.<br>
+		<input type="radio" name="8" onclick="test(8,'3')">Vejo o programa inteiro, toda semana.<br>
+		<input type="radio" name="8" onclick="test(8,'4')">Além de ver o programa da semana, revejo os programas anteriores.<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Qual desses objetos é mais fácil de ser encontrado no seu quarto?</h3>
+		<input type="radio" name="9" onclick="test(9,'prata')">Medalha de prata<br>
+		<input type="radio" name="9" onclick="test(9,'panfletos')">Panfletos de propaganda<br>
+		<input type="radio" name="9" onclick="test(9,'yoga')">Tapete de yoga<br>
+		<input type="radio" name="9" onclick="test(9,'bola')">Bola<br>
+		<input type="radio" name="9" onclick="test(9,'retrato')">Porta-retrato do Faustao<br>
+	</div>
+	<div class="col-sm-6">
+		<h3>Qual desses shows você teria mais vontade de ir?</h3>
+		<input type="radio" name="10" onclick="test(10,'chiclete')">Chiclete com banana<br>
+		<input type="radio" name="10" onclick="test(10,'big')">Notorious B.I.G<br>
+		<input type="radio" name="10" onclick="test(10,'sofre')">Pablo da sofrência<br>
+		<input type="radio" name="10" onclick="test(10,'banda')">A banda que abre para o show principal de qualquer outra banda<br>
+		<input type="radio" name="10" onclick="test(10,'ratm')">Rage Against the machine<br>
+	</div>
+
+	</section>
+	</form>
+	
+	<section>
+	<button type="button" onclick="main()" style="clear: both;">Enviar respostas</button>
+	<div class="col-sm-12">
+			<article style="float: left;">
+			<h2 id="tituloresp"></h2>
+			<p id="textoresp"></p>
+			</article>
+			<img src="" id="imagem" style="float: right;">
+	</div>
+	</section>
+
+	
+
+</body>
+</html>

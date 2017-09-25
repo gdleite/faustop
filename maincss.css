@@ -19,7 +19,61 @@ h1{
 }
 .button1{
 	float: left;
+  width: 110px;
 }
 .button2{
 	float: right;
+  width: 110px;
+}
+button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f39c12;
+  border: 0;
+  border-bottom: 2px solid #262626;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e8930c;
+  box-shadow: inset 0 -2px #e8930c;
+  font-family: 'Lobster', cursive;
+}
+button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: 'Lobster', cursive;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    left: 0px;
+    background: orange;
+    padding-left: 30px;
+}
+.instbox{
+  color: white;
+  position: absolute;
+  top:0;
+  left:   50%;
+  width: 100%;
+  background: #4d4d4d;
+  padding-left: 30px;
+  padding-right: 30px;
+  background:#cc8500;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  font-size:14px;
+}
+.instbox p{
+  font-size: 14px;
 }

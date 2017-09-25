@@ -5,6 +5,24 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="maincss.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script type="text/javascript">
+	var x=1;
+		function instrucoes(){
+			if (x==1){
+			document.getElementById('inst').innerHTML="Instruções:<br>- Selecione a opção de mais correta levando em consideração a pergunta feita e sua opinião pessoal<br><br>- Caso não sinta vontade, não é necessário a resposta da pergunta. Porém tenha em mente que isso influenciará na precisão do resultado.<br><br>- O quiz pode ser refeito várias vezes! Tente mudar suas respostas para ver os diferentes resultados."
+			}
+			else{
+				document.getElementById('inst').innerHTML="&darr;";
+			}
+			if(x==1){
+				x=2
+			}
+			else{
+				x=1
+			}
+		}	
+
+	</script>
 </head>
 <body>
 	<section>
@@ -12,9 +30,15 @@
 		<form action="quiz.html" class="button1">
 		<button type="submit" value="quiz">Começar o Quiz</button>
 		</form>
-		<form action="instrucoes.html" class="button2">
-		<button type="submit" value="instrucoes">Instruções</button>
-		</form>
+		<button type="button" class="button2" onclick="instrucoes()">Instruções</button>
 	</section>
+	<article class="instbox">
+		<p id="inst">&darr;</p>
+	</article>
+	<footer>
+		<h2>Quiz P1 TECWEB</h2>
+		<h2>Autor: Gabriel Dantas Leite</h2>
+		<h3>Tia - 31719589</h3>
+	</footer>
 </body>
 </html>

@@ -1,5 +1,10 @@
+body{
+	font-family: 'Lobster', cursive;
+	background-color: #262626;
+	letter-spacing: 1px;
+}
 .jumbotron {
-	background-image:url(banner-faustao.jpg) ;
+	background-image:url(imagens/banner-faustao.jpg) ;
 	background-position:-10px top; 
     color: black;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
@@ -9,10 +14,63 @@
 
 }	
 .col-sm-6{
-	background-color: #666;
-	color: #fff;
+	background-color: #4d4d4d;
+	color: #a6a6a6;
 	font-weight: bold;
 	padding: 10px;
 	border:1px solid black; 
 	height: 330px;
+	font-size: 20px;
 }
+.col-sm-6 p {
+	margin-left: 3px;
+	color: #a6a6a6;
+}
+.col-sm-12 img{
+	border:0;
+    margin-right: 200px;
+}
+.col-sm-12 {
+	margin-top: 30px;
+}
+button {
+  position: relative;
+  vertical-align: top;
+  width: 50%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f39c12;
+  border: 0;
+  border-bottom: 2px solid #e8930c;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e8930c;
+  box-shadow: inset 0 -2px #e8930c;
+  clear: both;
+  left: 25%;
+  clear: both;
+  margin-top: 20px;
+}
+button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  clear: both;
+}
+article{
+	color: white;
+	width: 400px;
+	margin-left: 200px; 
+}
+h2{
+	margin:0;
+	margin-bottom: 20px
+}
+article p{
+	font-size: 18px;
+}
+
