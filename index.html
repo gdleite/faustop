@@ -6,6 +6,7 @@
 	<meta name="google-site-verification" content="3xmlbxn6raT2W2RIeKMs-kNDqy2bbQ2_js0J8HaccE4" />
 	<link rel="stylesheet" type="text/css" href="maincss.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	var x=1;
 		function instrucoes(){
@@ -21,25 +22,34 @@
 			else{
 				x=1
 			}
-		}	
+		}
+	$(document).ready(function(){
+    $("button").mouseover(function() {
+            $(this).animate({"font-size": "35px"}, 300);
+            });
+    $("button").mouseout(function() {
+            $(this).animate({"font-size": '22px'}, 300);
+    });
+});
 
 	</script>
 </head>
 <body>
 	<section>
-		<h1>Quem é você no Faustão?</h1>
+		
 		<form action="quiz.html" class="button1">
+		<h1>Quem é você no Faustão?</h1>
 		<button type="submit" value="quiz">Começar o Quiz</button>
-		</form>
 		<button type="button" class="button2" onclick="instrucoes()">Instruções</button>
+		</form>
 	</section>
 	<article class="instbox">
 		<p id="inst">&darr;</p>
 	</article>
 	<footer>
-		<h2>Quiz P1 TECWEB</h2>
-		<h2>Autor: Gabriel Dantas Leite</h2>
-		<h3>Tia - 31719589</h3>
+		<h2 style="font-size: 18px;">Quiz P1 TECWEB</h2>
+		<h2 style="font-size: 18px;">Autor: Gabriel Dantas Leite</h2>
+		<h3 style="font-size: 16px;">Tia - 31719589</h3>
 	</footer>
 </body>
 </html>

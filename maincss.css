@@ -6,24 +6,30 @@ section{
 	background:#666;
   	position:absolute;
   	color:#fff;
-  	top:50%;
+  	top:45%;
   	left:50%;
   	padding:15px;
   	-ms-transform: translateX(-50%) translateY(-50%);
   	-webkit-transform: translate(-50%,-50%);
   	transform: translate(-50%,-50%);
   	border-radius: 25px;
+    display: flex;
+  justify-content: center;
+
 }
 h1{
 	font-size:60px;
 }
 .button1{
-	float: left;
-  width: 110px;
+
+	margin: 0 auto;
+  width: 500px;
+  height:110%;
 }
 .button2{
-	float: right;
-  width: 110px;
+	margin: 0 auto;
+  width: 500px;
+  height:110%;
 }
 button {
   position: relative;
@@ -65,15 +71,14 @@ footer{
   top:0;
   left:   50%;
   width: 100%;
-  background: #4d4d4d;
+  background: #f39c12;
   padding-left: 30px;
   padding-right: 30px;
-  background:#cc8500;
   width: 500px;
   text-align: center;
   border-radius: 10px;
   font-size:14px;
 }
 .instbox p{
-  font-size: 14px;
+  font-size: 16px;
 }
