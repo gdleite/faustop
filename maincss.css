@@ -76,7 +76,7 @@ footer{
   padding-right: 30px;
   width: 500px;
   text-align: center;
-  border-bottom: 10px;
+  border-radius:0px 0px 10px 10px;
   font-size:14px;
 }
 .instbox p{
